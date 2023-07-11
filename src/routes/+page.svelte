@@ -32,6 +32,8 @@
 		C: [],
 		D: []
 	};
+
+    let images = [];
 </script>
 
 <div class=" w/8-12 m-16">
@@ -44,9 +46,9 @@
 		<DropList className="rounded-l-md bg-gradient-to-r from-[#a20202] to-[#c21e24] min-h-[148px] w-40" items={rankings['D']} type="light" />
 	</div>
 	<!-- Our container that holds the images -->
-	<div class="mt-8 flex min-h-[296px] bg-slate-700 w-full rounded-md">
+	<div class="mt-8 flex min-h-[296px] bg-slate-700 w-full rounded-md flex-col">
 		<h2 class="text-slate-100 text-2xl font-semibold mt-4 ml-4">To be Ranked</h2>
 		<div data-id="to-be-ranked-container" />
-        <ImageDropContainer />
+        <ImageDropContainer  {images}/>
 	</div>
 </div>

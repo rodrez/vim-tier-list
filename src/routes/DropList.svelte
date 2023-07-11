@@ -22,7 +22,7 @@
 	<div class={className || "rounded-l-md bg-gradient-to-r from-[#0381d9] to-[#1b4090] min-h-[148px] w-40"} />
 	<section
 		class="rounded-r-md bg-slate-700 min-h-[148px] w-full flex flex-wrap gap-4 items-center p-4"
-		use:dndzone={{ items, flipDuration, type }}
+		use:dndzone={{ items, type }}
 		on:consider={handleSort}
 		on:finalize={handleSort}
 	>
